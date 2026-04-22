@@ -8,6 +8,7 @@ import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import PackageDetails from './pages/PackageDetails';
 import PaymentPage from './pages/PaymentPage';
+import Chatbot from './components/Chatbot';
 
 const LandingPage: React.FC = () => (
   <div className="min-h-screen bg-white font-sans selection:bg-purple-100 selection:text-purple-900">
@@ -62,6 +63,7 @@ const LandingPage: React.FC = () => (
         </div>
       </section>
     </main>
+    <Chatbot />
     <Footer />
   </div>
 );
@@ -74,6 +76,7 @@ const App: React.FC = () => {
         <Route path="/details/:id" element={<PackageDetails />} />
         <Route path="/payment/:id" element={<PaymentPage />} />
       </Routes>
+      <Chatbot />
     </BrowserRouter>
   );
 };
