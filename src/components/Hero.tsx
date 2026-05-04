@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1758613656356-b3d9030a9ff8?auto=format&fit=crop&q=80&w=2070"
+          src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=2071"
           alt="Creative Studio"
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
