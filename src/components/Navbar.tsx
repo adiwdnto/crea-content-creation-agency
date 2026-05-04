@@ -35,12 +35,12 @@ const Navbar: React.FC = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className={cn("hidden md:flex items-center space-x-8", isScrolled ? "text-gray-600" : "text-white")}>
           {navLinks.map((link) => (
             <Link
               key={link.name}
               to={link.href.startsWith('#') ? `/${link.href}` : link.href}
-              className="text-sm font-medium text-gray-600 hover:text-purple-600 transition-colors"
+              className="text-sm font-medium hover:text-purple-300 transition-colors"
             >
               {link.name}
             </Link>
